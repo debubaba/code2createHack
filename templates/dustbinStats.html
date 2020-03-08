@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5c0ccf78a0.js" crossorigin="anonymous"></script>
+        <link type="text/css" rel="stylesheet" href="{% static "css/style1.css" %}">
+    </head>
+    <body>
+        <main class="stats-content">
+            <div class="capacity-section">
+                <div class="capacity-text">
+                    <i class="material-icons icon">delete</i>
+                    <!-- <br> -->
+                    <p>Check the amount of garbage filled in dustbin</p>
+                </div>
+                <div class="capacity-bar">
+                    <div class="bar">
+                        <div class="fill"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+        <div class="card">
+            <input type="checkbox" id="card1" class="more" aria-hidden="true">
+            <div class="content">
+                <div class="front" style="background-image: url('{% static 'resources/bio.svg'%}'); background-size: 5rem; background-repeat: no-repeat;">
+                    <div class="inner">
+                        <h2>Bio Degradable</h2>
+
+                        <label for="card1" class="button" aria-hidden="true">
+                            Details
+                        </label>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                      <ul>
+                        <li><h2>Cloth:</h2></li>
+                      </ul>
+
+                      <label for="card1" class="button return" aria-hidden="true">
+                          <i class="fas fa-arrow-left"></i>
+                      </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <input type="checkbox" id="card2" class="more">
+            <div class="content">
+                <div class="front" style="background-image: url('{% static 'resources/nonBio.svg'%}'); background-size: 5rem; background-repeat: no-repeat;">
+                    <div class="inner">
+                        <h2>Non Bio Degradable</h2>
+
+                        <label for="card2" class="button" aria-hidden="true">
+                            Details
+                        </label>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                      <ul>
+                        <li><h2>Cloth:</h2></li>
+                        <li><h2>Band-Aid:</h2></li>
+                        <li><h2>Syringe:</h2></li>
+                      </ul>
+
+                        <label for="card2" class="button return" aria-hidden="true">
+                            <i class="fas fa-arrow-left"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <input type="checkbox" id="card3" class="more">
+            <div class="content">
+                <div class="front" style="background-image: url('{% static 'resources/re.svg'%}'); background-size: 5rem; background-repeat: no-repeat;">
+                    <div class="inner">
+                        <h2>Recycleable</h2>
+
+                        <label for="card3" class="button" aria-hidden="true">
+                            Details
+                        </label>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                      <ul>
+                        <li><h2>Bottle:</h2></li>
+                        <li><h2>Band-Aid:</h2></li>
+                        <li><h2>Syringe:</h2></li>
+                        <li><h2>Shelling:</h2></li>
+                      </ul>
+
+                        <label for="card3" class="button return" aria-hidden="true">
+                            <i class="fas fa-arrow-left"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <input type="checkbox" id="card4" class="more">
+            <div class="content">
+                <div class="front" style="background-image: url('{% static 'resources/nonRe.svg'%}'); background-size: 5rem; background-repeat: no-repeat;">
+                    <div class="inner">
+                        <h2>Non Recyclable</h2>
+
+                        <label for="card4" class="button" aria-hidden="true">
+                            Details
+                        </label>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                      <ul>
+                        <li><h2>Shelling</h2></li>
+                        <li><h2>Syringe:</h2></li>
+                      </ul>
+
+                        <label for="card4" class="button return" aria-hidden="true">
+                            <i class="fas fa-arrow-left"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </main>
+    </body>
+</html>

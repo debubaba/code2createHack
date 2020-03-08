@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="{% static "css/style.css" %}">
+
+        </script>
+    </head>
+    <body>
+
+        <nav>
+            <div id="item1">Home</div>
+            <div class="line"></div>
+            <div id="item2"><a href="{% url 'dustbinStats' %}">Stats</a></div>
+            <div class="line"></div>
+            <div id="item3">Contact Us</div>
+            <h1 class="logo">Smart Segregator</h1>
+        </nav>
+        <div></div>
+        <main class="container">
+            <div class="background-particles" id="particles-js"></div>
+            <div class="main-content">
+                <div class="left-content">
+                    <h1 class="main-heading">
+                        <span class="underline">Problem</span> Statement
+                        <!-- <br>
+                        & Increase <span class="underline">Growth.</span> -->
+                    </h1>
+                    <p class="description">
+                        Poor waste management practices on bases can lead to air and water pollution that affect communities living in proximity to installations, as well as military personnel and civilian contractors. There are a lot of renewable resources which can be used as assets instead of being disposed off along with waste no longer required or of no use.
+                    </p>
+                    <br>
+                    <a class="btn btn-large" href="{% url 'dustbinStats' %}"><i class="material-icons icon">insert_chart</i>&nbsp;&nbsp;&nbsp;Get Stats</a>
+                </div>
+                <div class="right-content">
+
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="{% static 'js/particles.js' %}"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+</html>

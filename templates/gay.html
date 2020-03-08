@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5c0ccf78a0.js" crossorigin="anonymous"></script>
+        <link type="text/css" rel="stylesheet" href="{% static "css/style1.css" %}">
+    </head>
+    <body>
+        <main class="stats-content">
+            <div class="capacity-section">
+                <div class="capacity-text">
+                    <i class="material-icons icon">delete</i>
+                    <!-- <br> -->
+                    <p>Check the amount of garbage filled in dustbin</p>
+                </div>
+                <div class="capacity-bar">
+                    <div class="bar">
+                        <div class="fill"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-section">
+                <div class="row">
+                    <div class="card" id="card-1">
+                        <div class="icon" id="icon-1">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="card-data">
+                            <p class="card-heading">Bio-Degradable</p>
+                            <br>
+                            <p class="data">15%</p>
+                        </div>
+                    </div>
+                    <div class="card" id="card-2">
+                        <div class="icon" id="icon-2">
+                            <i class="fas fa-radiation"></i>
+                        </div>
+                        <div class="card-data">
+                            <p class="card-heading">Non Bio-Degradable</p>
+                            <br>
+                            <p class="data">85%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card" id="card-3">
+                        <div class="icon" id="icon-3">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <div class="card-data">
+                            <p class="card-heading">Recycleable</p>
+                            <br>
+                            <p class="data">65%</p>
+                        </div>
+                    </div>
+                    <div class="card" id="card-4">
+                        <div class="icon" id="icon-4">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <div class="card-data">
+                            <p class="card-heading">Non Recycleable</p>
+                            <br>
+                            <p class="data">35%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
